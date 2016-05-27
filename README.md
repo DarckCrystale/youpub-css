@@ -11,17 +11,17 @@ Par contre, je peux vous proposer plein de choses différentes :
 
 # Me signaler un bug sur Youpub
 Il y a quelques bug graphiques sur le forum. Vous pouvez me les signaler en créant une issue (https://github.com/DarckCrystale/youpub-css/issues/new). Merci de suivre le modèle donné dans l'issue #1 :
-> **Dans**
+> # **Dans**
 
 > \<les pages du site qui sont concernées>
 
 > Exemple : Accueil > Discussions diverses
  
-> **Comportement supposé**
+> # **Comportement supposé**
 
 > \<Ce que le site devrait faire>
 > 
-> **Comportement actuel**
+> # **Comportement actuel**
 
 > \<Ce que le site fait à l'heure actuelle et qui est problématique>
 
@@ -34,17 +34,17 @@ Les labels préfixés d'un nombre me servent à déterminer l'avancement de l'is
 
 # Demander une nouveauté sur le forum / la refonte d'un élément du forum
 Vous trouvez un truc du forum hyper moche, ou bien vous en avez juste marre de ce skin qui a des années ? Faites une demande de refonte. Voici le modèle :
-> **Dans**
+> # **Dans**
 
 > \<les pages du site qui sont concernées>
 
 > Exemple : Accueil > Discussions diverses
  
-> **Existant**
+> # **Existant**
 
 > \<Description de ce qui existe + screenshots>
 > 
-> **Ce qu'on voudrait de nouveau**
+> # **Ce qu'on voudrait de nouveau**
 
 > \<Description précise de ce que vous voulez + maquettes (réalisées avec Paint, Photoshop, whatever)>
 
@@ -55,3 +55,6 @@ Les labels préfixés d'un nombre me servent à déterminer l'avancement de l'is
 Si votre demande est techniquement réalisable, le staff décidera de sa mise en place ou non. Vous pourrez consulter les commentaires à votre suggestion et l'avancement de la décision / mise en place éventuelle à tout moment.
 
 **Un exemple :** https://github.com/DarckCrystale/youpub-css/issues/2
+
+# Mise en page de manière générale
+Je fais attention à mettre en page les choses pour qu'elles soient agréables à lire. Vous n'êtes pas obligés de faire de même, mais ça serait fort appréciable ! GitHub utilise un système de balises qui n'est pas du BBcode, vous pouvez en obtenir le mode d'emploi ici : https://guides.github.com/features/mastering-markdown/.
