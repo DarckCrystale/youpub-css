@@ -1,0 +1,39 @@
+/* Rédaction par DarckCrystale */
+
+/* Lien contenu dans les div de vote qui permet de up-voter une réponse */
+.vote-button a[href*="eval=plus"] {
+    opacity: 0; /* Cache le texte */
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Lien contenu dans les div de vote qui permet de down-voter une réponse */
+.vote-button a[href*="eval=minus"] {
+    opacity: 0; /* Cache le texte */
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Div qui contient les stuffs pour voter */
+.vote {
+    width: 80px; /* Permet d'aligner les trois trucs horizontalement */
+}
+
+/* Divs qui contiennent de quoi voter */
+.vote .vote-button, .vote .vote-no-bar {
+    
+    float: left; /* Permet d'aligner les trois trucs horizontalement */
+    margin: 10px;
+    background-image: url(http://img15.hostingpics.net/pics/917250iconesyt.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* Petite barre qui sépare les deux boutons de vote */
+.vote-no-bar {
+    display: none; /* Cache l'élément */
+}
