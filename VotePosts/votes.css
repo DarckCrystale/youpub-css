@@ -4,16 +4,16 @@
 .vote-button a[href*="eval=plus"] {
     opacity: 0; /* Cache le texte */
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Définit la taille des icônes */
+    height: 20px; /* Définit la taille des icônes */
 }
 
 /* Lien contenu dans les div de vote qui permet de down-voter une réponse */
 .vote-button a[href*="eval=minus"] {
     opacity: 0; /* Cache le texte */
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 20px; /* Définit la taille des icônes */
+    height: 20px; /* Définit la taille des icônes */
 }
 
 /* Div qui contient les stuffs pour voter */
@@ -27,7 +27,7 @@
     float: left; /* Permet d'aligner les trois trucs horizontalement */
     margin: 10px;
     background-image: url(http://img15.hostingpics.net/pics/917250iconesyt.png);
-    background-size: 20px 20px;
+    background-size: 20px 20px; /* Définit la taille de l'image pour qu'elle soit affichée correctement */
     background-repeat: no-repeat;
     background-position: center center;
 }
