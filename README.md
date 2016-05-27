@@ -60,7 +60,8 @@ Si votre demande est techniquement réalisable, le staff décidera de sa mise en
 Je fais attention à mettre en page les choses pour qu'elles soient agréables à lire. Vous n'êtes pas obligés de faire de même, mais ça serait fort appréciable ! GitHub utilise un système de balises qui n'est pas du BBcode, vous pouvez en obtenir le mode d'emploi ici : https://guides.github.com/features/mastering-markdown/.
 
 # FAQ
-## Comment se servir de mon travail pour améliorer le forum Youpub ?
+**Comment se servir de ce repository pour améliorer le forum Youpub ?**
+
 A l'heure actuelle, je fais un dossier par issue. Ce dossier porte un nom explicite. Il contient :
 - une page HTML que j'ai obtenue en sauvegardant une page du site depuis mon navigateur et qui sert à faire des tests,
 - les fichiers qui sont associés à la page HTML, que j'ai obtenu en sauvegardant une page du site depuis mon navigateur et nécessaires aux tests,
