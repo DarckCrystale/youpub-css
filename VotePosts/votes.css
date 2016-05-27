@@ -16,6 +16,14 @@
     height: 20px; /* Définit la taille des icônes */
 }
 
+/* Div de vote qui permet de down-voter une réponse */
+.vote-button:last-child {
+    /* Ici, on tourne le pouce : une seule icône utilisée à deux endroits, c'est moins lourd à charger */
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
 /* Div qui contient les stuffs pour voter */
 .vote {
     width: 80px; /* Permet d'aligner les trois trucs horizontalement */
@@ -23,15 +31,13 @@
 
 /* Divs qui contiennent de quoi voter */
 .vote .vote-button, .vote .vote-no-bar {
-    
     float: left; /* Permet d'aligner les trois trucs horizontalement */
-    margin: 10px;
+    margin: 10px; /* Eloigne les icônes d'une distance respectable */
     background-image: url(http://img15.hostingpics.net/pics/917250iconesyt.png);
     background-size: 20px 20px; /* Définit la taille de l'image pour qu'elle soit affichée correctement */
     background-repeat: no-repeat;
     background-position: center center;
 }
-
 
 /* Petite barre qui sépare les deux boutons de vote */
 .vote-no-bar {
