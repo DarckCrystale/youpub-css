@@ -69,4 +69,4 @@ A l'heure actuelle, je fais un dossier par issue. Ce dossier porte un nom explic
 
 Pour l'instant, il faut récupérer le contenu de chacun de ces fichiers CSS et le copier à la main dans un nouveau fichier pour avoir l'intégralité des modifs réalisées à mettre sur le site. Je peux m'en charger à votre demande.
 
-A terme, je compte fabriquer une petite moulinette qui compile tous ces fichiers en un seul, pour faciliter la tâche, et que vous n'ayez plus qu'à récupérer le contenu de ce fichier-là, ce qui fera gagner du temps.
+A terme, je compte fabriquer une petite moulinette qui compile tous les fichiers CSS créés en un seul gors fichier CSS, pour faciliter la tâche, et que vous n'ayez plus qu'à récupérer le contenu de ce fichier-là, ce qui fera gagner du temps.
