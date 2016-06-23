@@ -11,6 +11,7 @@ $(document).ready(function () {
         upvoteLink.css("display", "block");
         upvoteLink.css("width", "20px");
         upvoteLink.css("height", "20px");
+        upvoteLink.attr('title', 'J\'aime ce post');
     });
     
     /* Liens contenus dans les div de vote, qui permettent de down-voter une réponse */
@@ -21,6 +22,7 @@ $(document).ready(function () {
         downvoteLink.css("display", "block");
         downvoteLink.css("width", "20px");
         downvoteLink.css("height", "20px");
+        downvoteLink.attr('title', 'Je n\'aime pas ce post');
     });
     
     /* Div de vote qui permettent de down-voter une réponse */
