@@ -1,0 +1,71 @@
+//<![CDATA[
+if(typeof(nb_como_display) == 'undefined'){
+	var nb_como_display = 0;
+}
+
+if(typeof(loadCOH) != 'function'){
+	function fpt() {
+		function _raw() {
+		  return [
+			navigator.userAgent,
+			[ screen.height, screen.width, screen.colorDepth ].join("x"),
+			( new Date() ).getTimezoneOffset(),
+			!!window.sessionStorage,
+			!!window.localStorage,
+			$.map( navigator.plugins, function(p) {
+			  return [
+				p.name,
+				p.description,
+				$.map( p, function(mt) {
+				  return [ mt.type, mt.suffixes ].join("~");
+				}).join(",")
+			  ].join("::");
+			}).join(";")
+		  ].join("###");
+		}
+		
+		return (typeof(window.md5) === "function" ? md5(_raw()) : "");
+	}
+
+	function loadCOH(f, nb)
+	{
+		var CO_site = document.location.href;
+		var format = f;
+		
+		var xhr_object = null;
+		if (window.XMLHttpRequest) // TOUS NAVIGATEURS + IE > 6
+			xhr_object = new XMLHttpRequest();
+		else if(window.ActiveXObject) // IE < 7
+			xhr_object = new ActiveXObject("Microsoft.XMLHTTP");
+		else return(false);
+
+		var c = (navigator.cookieEnabled ? 1 : 0);
+		if (!c){
+			document.cookie = "cookietest=1";
+			c = (document.cookie.indexOf("cookietest=") != -1);
+			document.cookie = "cookietest=1; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+		}
+		
+		xhr_object.open("POST", "http://ad.comoclic.net/debug.php");
+	
+		xhr_object.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		xhr_object.send("f="+f+"&s="+CO_site+"&c="+c+"&fp="+fpt()+"&a=0");
+
+		document.write("<div id='como_disp_"+nb+"'></div>");
+		
+		xhr_object.onreadystatechange = function(){
+			if (xhr_object.readyState == 4){
+				var data = xhr_object.responseText;
+				if(typeof(data) != 'undefined' && data.length > 0){
+					if(document.getElementById('como_disp_'+nb)){
+						document.getElementById('como_disp_'+nb).innerHTML = data;
+					}
+				}
+			}
+		}
+	}
+}
+
+++nb_como_display;
+loadCOH(2, nb_como_display);
+//]]>
