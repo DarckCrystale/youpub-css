@@ -1,0 +1,23 @@
+.vote-bar {
+    display: none;
+}
+
+.video-extras-sparkbars {
+    height: 4px;
+    overflow: hidden;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px
+}
+
+.video-extras-sparkbar-likes {
+    float: left;
+    height: 4px;
+    background: #167ac6;
+}
+
+.video-extras-sparkbar-dislikes {
+    float: left;
+    height: 4px;
+    background: #ccc;
+}
