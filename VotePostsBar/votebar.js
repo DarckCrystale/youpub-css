@@ -18,8 +18,8 @@ $(document).ready(function () {
         var nombreVotesTotaux = regexNombreVotesTotaux.exec(votesDecompte)[1];
         
         /* Détermination du nombre de votes positifs et négatifs */
-        var nombreVotesPositifs = nombreVotesTotaux * pourcentageVotesPositifs / 100;
-        var nombreVotesNegatifs = nombreVotesTotaux - nombreVotesPositifs;
+        var nombreVotesPositifs = Math.round(nombreVotesTotaux * pourcentageVotesPositifs / 100);
+        var nombreVotesNegatifs = Math.round(nombreVotesTotaux - nombreVotesPositifs);
         
         /* Fabrication de la tooltip qui indique le nombre de votes pour le topic */
         var title = '';
